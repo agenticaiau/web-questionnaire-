@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Project Questionnaire</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #555;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 20px;
+        }
+        .form-section {
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 5px;
+            color: #555;
+        }
+        .choice-group label {
+            display: block; /* Each choice on a new line */
+            margin-bottom: 8px;
+            font-weight: normal;
+        }
+         .choice-group input[type="radio"],
+         .choice-group input[type="checkbox"] {
+            margin-right: 8px;
+            vertical-align: middle;
+         }
+        button {
+            display: inline-block;
+            background: #5cb85c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #4cae4c;
+        }
+        .other-input {
+            margin-top: 5px;
+            margin-left: 25px; /* Indent 'Other' text input */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Website Project Client Questionnaire</h1>
+        <p>This questionnaire is designed to gather detailed information about your project needs to help us accurately scope the work and provide a cost estimate. Please answer as thoroughly as possible. All information provided will be treated with the utmost confidentiality.</p>
+
+        <form action="#" method="post"> <!-- Action and method can be updated later -->
+
+            <div class="form-section">
+                <h2>1. Client and Business Details</h2>
+                <div class="form-group">
+                    <label for="client-name">Client Name (or preferred alias for the website):</label>
+                    <input type="text" id="client-name" name="client-name">
+                </div>
+                <div class="form-group">
+                    <label for="business-name">Business Name (if applicable):</label>
+                    <input type="text" id="business-name" name="business-name">
+                </div>
+                <div class="form-group">
+                    <label for="domain-name">Website Domain Name (if you have one):</label>
+                    <input type="text" id="domain-name" name="domain-name">
+                </div>
+                <div class="form-group">
+                    <label for="contact-person">Primary Contact Person:</label>
+                    <input type="text" id="contact-person" name="contact-person">
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Primary Contact Email:</label>
+                    <input type="email" id="contact-email" name="contact-email">
+                </div>
+                <div class="form-group">
+                    <label for="contact-phone">Primary Contact Phone Number:</label>
+                    <input type="tel" id="contact-phone" name="contact-phone">
+                </div>
+                <div class="form-group">
+                    <label for="locations-served">Location(s) served:</label>
+                    <input type="text" id="locations-served" name="locations-served">
+                </div>
+                <div class="form-group">
+                    <label for="services-description">Brief description of your services and approach:</label>
+                    <textarea id="services-description" name="services-description"></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>2. Project Goals and Objectives</h2>
+                <fieldset class="form-group">
+                    <legend>What are the primary goals for this new website? (Select all that apply)</legend>
+                    <div class="choice-group">
+                        <label><input type="checkbox" name="primary-goals[]" value="attract-clients"> Attract new clients</label>
+                        <label><input type="checkbox" name="primary-goals[]" value="showcase-services"> Showcase services</label>
+                        <label><input type="checkbox" name="primary-goals[]" value="manage-inquiries"> Manage inquiries/bookings</label>
+                        <label><input type="checkbox" name="primary-goals[]" value="provide-info"> Provide information discreetly</label>
+                        <label><input type="checkbox" name="primary-goals[]" value="professional-presence"> Establish professional online presence</label>
+                        <label><input type="checkbox" name="primary-goals[]" value="other"> Other (please specify)</label>
+                        <input type="text" name="primary-goals-other" class="other-input" placeholder="Specify other goals">
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    <label for="measurable-objectives">What specific, measurable objectives do you have for the website? (e.g., increase direct inquiries by X%, improve booking efficiency)</label>
+                    <textarea id="measurable-objectives" name="measurable-objectives"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="success-indicators">What are the key indicators you will use to measure the website's success?</label>
+                    <textarea id="success-indicators" name="success-indicators"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="problems-solved">What problem(s) will this website solve for your business or your clients?</label>
+                    <textarea id="problems-solved" name="problems-solved"></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>3. Target Audience</h2>
+                <div class="form-group">
+                    <label for="primary-audience">Who is the primary target audience for this website? (Describe their demographics, interests, needs, online behavior, expectations regarding discretion/professionalism)</label>
+                    <textarea id="primary-audience" name="primary-audience"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="secondary-audiences">Are there any secondary target audiences?</label>
+                    <textarea id="secondary-audiences" name="secondary-audiences"></textarea>
+                </div>
+                 <fieldset class="form-group">
+                    <legend>What do you want your target audience to do when they visit your website? (Select primary actions)</legend>
+                    <div class="choice-group">
+                        <label><input type="checkbox" name="audience-actions[]" value="view-profile"> View profile/information</label>
+                        <label><input type="checkbox" name="audience-actions[]" value="browse-services"> Browse services</label>
+                        <label><input type="checkbox" name="audience-actions[]" value="view-gallery"> View photo/video gallery</label>
+                        <label><input type="checkbox" name="audience-actions[]" value="make-inquiry"> Make an inquiry</label>
+                        <label><input type="checkbox" name="audience-actions[]" value="book-session"> Book a session (if applicable)</label>
+                        <label><input type="checkbox" name="audience-actions[]" value="other"> Other (please specify)</label>
+                        <input type="text" name="audience-actions-other" class="other-input" placeholder="Specify other actions">
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="form-section">
+                <h2>4. Website Type and Core Functionality</h2>
+                <fieldset class="form-group">
+                    <legend>What type of website will this be?</legend>
+                    <div class="choice-group">
+                        <label><input type="radio" name="website-type" value="personal-profile"> Personal Profile Site</label>
+                        <label><input type="radio" name="website-type" value="agency"> Agency Site (representing multiple individuals)</label>
+                        <label><input type="radio" name="website-type" value="informational"> Informational / Blog</label>
+                        <label><input type="radio" name="website-type" value="other"> Other (please specify)</label>
+                        <input type="text" name="website-type-other" class="other-input" placeholder="Specify other type">
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend>What are the essential functions the website must perform? (Select all that apply)</legend>
+                    <div class="choice-group">
+                        <label><input type="checkbox" name="essential-functions[]" value="display-profile"> Display profile information</label>
+                        <label><input type="checkbox" name="essential-functions[]" value="list-services"> List services and rates</label>
+                        <label><input type="checkbox" name="essential-functions[]" value="photo-gallery"> Showcase photos</label>
+                        <label><input type="checkbox" name="essential-functions[]" value="video-gallery"> Showcase videos</label>
+                        <label><input type="checkbox" name="essential-functions[]" value="contact-methods"> Provide contact methods</label>
+                        <label><input type="checkbox" name="essential-functions[]" value="booking-inquiry"> Online booking/inquiry form</label>
+                        <label><input type="checkbox" name="essential-functions[]" value="availability"> Display availability/calendar</label>
+                        <label><input type="checkbox" name="essential-functions[]" value="other"> Other (please specify)</label>
+                        <input type="text" name="essential-functions-other" class="other-input" placeholder="Specify other essential functions">
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend>Are there any features that are "nice-to-have" but not essential? (Select all that apply)</legend>
+                     <div class="choice-group">
+                        <label><input type="checkbox" name="nice-to-have[]" value="testimonials"> Testimonials/Reviews Section</label>
+                        <label><input type="checkbox" name="nice-to-have[]" value="faq"> FAQ Section</label>
+                        <label><input type="checkbox" name="nice-to-have[]" value="blog"> Blog/Updates Section</label>
+                        <label><input type="checkbox" name="nice-to-have[]" value="private-area"> Private Client Area</label>
+                        <label><input type="checkbox" name="nice-to-have[]" value="advanced-search"> Advanced Search/Filtering</label>
+                        <label><input type="checkbox" name="nice-to-have[]" value="other"> Other (please specify)</label>
+                        <input type="text" name="nice-to-have-other" class="other-input" placeholder="Specify other nice-to-have features">
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="form-section">
+                <h2>5. Specific Features and Integrations</h2>
+                 <fieldset class="form-group">
+                    <legend>How should clients contact you or make inquiries? (Select preferred methods, considering discretion)</legend>
+                    <div class="choice-group">
+                        <label><input type="checkbox" name="contact-methods[]" value="contact-form"> Secure Contact Form</label>
+                        <label><input type="checkbox" name="contact-methods[]" value="email"> Direct Email (provide address)</label>
+                        <label><input type="checkbox" name="contact-methods[]" value="phone"> Phone Call (provide number)</label>
+                        <label><input type="checkbox" name="contact-methods[]" value="secure-messaging"> Secure Messaging App (e.g., Signal, Wickr - specify)</label>
+                        <label><input type="checkbox" name="contact-methods[]" value="other"> Other (please specify)</label>
+                        <input type="text" name="contact-methods-other" class="other-input" placeholder="Specify other contact methods">
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    <label for="gallery-requirements">What are your requirements for photo and video galleries? (e.g., number of images/videos, resolution, organization, watermarking)</label>
+                    <textarea id="gallery-requirements" name="gallery-requirements"></textarea>
+                </div>
+                <fieldset class="form-group">
+                    <legend>Do you need to integrate with any third-party services or systems? (e.g., scheduling software, secure messaging, payment processing)</legend>
+                     <div class="choice-group">
+                        <label><input type="radio" id="integrations-yes" name="require-integrations" value="yes"> Yes</label>
+                        <label><input type="radio" id="integrations-no" name="require-integrations" value="no" checked> No</label>
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    <label for="specific-platforms">If yes to integrations, please list specific software/platforms and describe the required interaction.</label>
+                    <textarea id="specific-platforms" name="specific-platforms"></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>6. Design and Branding Preferences</h2>
+                <fieldset class="form-group">
+                    <legend>Do you have existing branding elements (logo, specific colors, fonts)?</legend>
+                     <div class="choice-group">
+                        <label><input type="radio" id="branding-yes" name="existing-branding" value="yes"> Yes (Please provide details/files)</label>
+                        <label><input type="radio" id="branding-no" name="existing-branding" value="no" checked> No</label>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend>What is the desired look and feel / overall "vibe" for the website? (Select key descriptors)</legend>
+                    <div class="choice-group">
+                        <label><input type="checkbox" name="look-feel[]" value="sophisticated"> Sophisticated</label>
+                        <label><input type="checkbox" name="look-feel[]" value="elegant"> Elegant</label>
+                        <label><input type="checkbox" name="look-feel[]" value="sensual"> Sensual</label>
+                        <label><input type="checkbox" name="look-feel[]" value="discreet"> Discreet</label>
+                        <label><input type="checkbox" name="look-feel[]" value="professional"> Professional</label>
+                        <label><input type="checkbox" name="look-feel[]" value="modern"> Modern</label>
+                        <label><input type="checkbox" name="look-feel[]" value="minimalist"> Minimalist</label>
+                        <label><input type="checkbox" name="look-feel[]" value="luxurious"> Luxurious</label>
+                        <label><input type="checkbox" name="look-feel[]" value="other"> Other (please specify)</label>
+                        <input type="text" name="look-feel-other" class="other-input" placeholder="Specify other look/feel">
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    <label for="liked-websites">Are there any websites you like the design of? Please provide URLs and explain what you like about them.</label>
+                    <textarea id="liked-websites" name="liked-websites"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="disliked-websites">Are there any websites you dislike the design of? Please provide URLs and explain what you dislike about them.</label>
+                    <textarea id="disliked-websites" name="disliked-websites"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="color-typography">What is your preferred color palette and typography (if any)?</label>
+                    <textarea id="color-typography" name="color-typography"></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>7. Content Strategy</h2>
+                <fieldset class="form-group">
+                    <legend>Who will be responsible for creating and providing the website content (text, photos, videos)?</legend>
+                    <div class="choice-group">
+                        <label><input type="radio" name="content-responsibility" value="client"> Client (You)</label>
+                        <label><input type="radio" name="content-responsibility" value="agency"> Agency (Us - may incur additional cost)</label>
+                        <label><input type="radio" name="content-responsibility" value="both"> Both</label>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend>Do you have existing content (text, photos, videos) that will be used on the new site?</legend>
+                     <div class="choice-group">
+                        <label><input type="radio" id="existing-content-yes" name="existing-content" value="yes"> Yes</label>
+                        <label><input type="radio" id="existing-content-no" name="existing-content" value="no" checked> No</label>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend>How frequently do you anticipate updating the website content?</legend>
+                    <div class="choice-group">
+                        <label><input type="radio" name="update-frequency" value="daily"> Daily</label>
+                        <label><input type="radio" name="update-frequency" value="weekly"> Weekly</label>
+                        <label><input type="radio" name="update-frequency" value="monthly"> Monthly</label>
+                        <label><input type="radio" name="update-frequency" value="rarely"> Rarely</label>
+                        <label><input type="radio" name="update-frequency" value="as-needed"> As Needed</label>
+                        <label><input type="radio" name="update-frequency" value="never"> Never (Static Site)</label>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend>Will you require a Content Management System (CMS) to manage content yourself?</legend>
+                     <div class="choice-group">
+                        <label><input type="radio" id="require-cms-yes" name="require-cms" value="yes"> Yes</label>
+                        <label><input type="radio" id="require-cms-no" name="require-cms" value="no" checked> No</label>
+                    </div>
+                </fieldset>
+                 <div class="form-group">
+                    <label for="cms-preference">If yes to CMS, do you have a preference? (e.g., WordPress, specific platform)</label>
+                    <input type="text" id="cms-preference" name="cms-preference">
+                </div>
+                <div class="form-group">
+                    <label for="legal-disclaimers">Are there any specific legal disclaimers or terms of service that need to be included?</label>
+                    <textarea id="legal-disclaimers" name="legal-disclaimers"></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>8. Technical Requirements, Hosting, and Security</h2>
+                <fieldset class="form-group">
+                    <legend>Do you have existing web hosting?</legend>
+                     <div class="choice-group">
+                        <label><input type="radio" id="existing-hosting-yes" name="existing-hosting" value="yes"> Yes</label>
+                        <label><input type="radio" id="existing-hosting-no" name="existing-hosting" value="no" checked> No</label>
+                    </div>
+                </fieldset>
+                 <div class="form-group">
+                    <label for="hosting-details">If yes to hosting, please provide details (provider, type). Are you aware of their policies regarding adult content?</label>
+                    <textarea id="hosting-details" name="hosting-details"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="technical-requirements">Are there any specific technical requirements or constraints?</label>
+                    <textarea id="technical-requirements" name="technical-requirements"></textarea>
+                </div>
+                <fieldset class="form-group">
+                    <legend>What level of website traffic do you anticipate?</legend>
+                    <div class="choice-group">
+                         <label><input type="radio" name="website-traffic" value="low"> Low (Under 1,000 visits/month)</label>
+                         <label><input type="radio" name="website-traffic" value="medium"> Medium (1,000 - 10,000 visits/month)</label>
+                         <label><input type="radio" name="website-traffic" value="high"> High (Over 10,000 visits/month)</label>
+                         <label><input type="radio" name="website-traffic" value="unsure"> Unsure</label>
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    <label for="security-requirements">What are your requirements for website security, data privacy, and backups? (Consider encryption, secure forms, protecting client info)</label>
+                    <textarea id="security-requirements" name="security-requirements"></textarea>
+                </div>
+                <fieldset class="form-group">
+                    <legend>Do you require domain name privacy?</legend>
+                     <div class="choice-group">
+                        <label><input type="radio" id="domain-privacy-yes" name="domain-privacy" value="yes"> Yes</label>
+                        <label><input type="radio" id="domain-privacy-no" name="domain-privacy" value="no" checked> No</label>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend>Do you require ongoing maintenance and support after launch?</legend>
+                     <div class="choice-group">
+                        <label><input type="radio" id="maintenance-yes" name="ongoing-maintenance" value="yes"> Yes (Discuss options/costs)</label>
+                        <label><input type="radio" id="maintenance-no" name="ongoing-maintenance" value="no" checked> No</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="form-section">
+                <h2>9. Timeline Expectations</h2>
+                <div class="form-group">
+                    <label for="desired-launch-date">What is your desired launch date for the website?</label>
+                    <input type="date" id="desired-launch-date" name="desired-launch-date">
+                </div>
+                <div class="form-group">
+                    <label for="key-milestones">Are there any key milestones or deadlines we should be aware of?</label>
+                    <textarea id="key-milestones" name="key-milestones"></textarea>
+                </div>
+                <fieldset class="form-group">
+                    <legend>Is the launch date flexible?</legend>
+                     <div class="choice-group">
+                        <label><input type="radio" id="launch-flexible-yes" name="launch-flexible" value="yes" checked> Yes</label>
+                        <label><input type="radio" id="launch-flexible-no" name="launch-flexible" value="no"> No</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="form-section">
+                <h2>10. Budget Considerations</h2>
+                <div class="form-group">
+                    <label for="budget-range">Do you have an allocated budget range for this project? (e.g., $1000-$2000, $2000-$5000, $5000+)</label>
+                    <input type="text" id="budget-range" name="budget-range">
+                </div>
+                <div class="form-group">
+                    <label for="budget-currency">What is the budget currency? (e.g., USD, EUR, AUD)</label>
+                    <input type="text" id="budget-currency" name="budget-currency">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>11. Existing Assets</h2>
+                <fieldset class="form-group">
+                    <legend>Please list any existing assets you can provide (Select all that apply)</legend>
+                    <div class="choice-group">
+                         <label><input type="checkbox" name="existing-assets[]" value="domain-access"> Domain Name Access</label>
+                         <label><input type="checkbox" name="existing-assets[]" value="hosting-access"> Hosting Access</label>
+                         <label><input type="checkbox" name="existing-assets[]" value="existing-files"> Existing Website Files/Data</label>
+                         <label><input type="checkbox" name="existing-assets[]" value="photos"> Professional Photos</label>
+                         <label><input type="checkbox" name="existing-assets[]" value="videos"> Videos</label>
+                         <label><input type="checkbox" name="existing-assets[]" value="text-content"> Written Service Descriptions/Text</label>
+                         <label><input type="checkbox" name="existing-assets[]" value="testimonials"> Testimonials</label>
+                         <label><input type="checkbox" name="existing-assets[]" value="logo"> Logo</label>
+                         <label><input type="checkbox" name="existing-assets[]" value="branding"> Other Branding Elements (Colors, Fonts)</label>
+                         <label><input type="checkbox" name="existing-assets[]" value="other"> Other (please specify)</label>
+                         <input type="text" name="existing-assets-other" class="other-input" placeholder="Specify other assets">
+                    </div>
+                </fieldset>
+                 <div class="form-group">
+                    <label for="assets-notes">Additional notes about existing assets:</label>
+                    <textarea id="assets-notes" name="assets-notes"></textarea>
+                </div>
+            </div>
+
+            <button type="submit">Submit Questionnaire</button>
+
+        </form>
+    </div>
+</body>
+</html>
